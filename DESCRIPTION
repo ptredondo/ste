@@ -1,0 +1,21 @@
+Package: ste
+Title: Inference and Simulation for Spectral Transfer Entropy (STE)
+Version: 0.0.0.1
+Authors@R: 
+    person("Paolo", "Redondo", , "paolovictor.redondo@kaust.edu.sa", role = c("aut", "cre"))
+Description: Provides tools for simulating multivariate oscillatory time series with user-specified frequency characteristics and causal interactions, extracting canonical frequency bands from observed signals, and quantifying directed dependence through transfer entropy and spectral transfer entropy. The package implements vine copula-based inference procedures for transfer entropy estimation, including bootstrap-based significance assessment, and includes utilities for generating modulating signals, carrier oscillations, and synthetic benchmark datasets with known dependence structures. These tools are designed for the analysis of complex dynamical systems, with particular applications to neuroscience, brain connectivity, and multivariate time series analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: 
+    doParallel,
+    extRemes,
+    foreach,
+    parallel,
+    rvinecopulib,
+    signal,
+    tsDyn
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
